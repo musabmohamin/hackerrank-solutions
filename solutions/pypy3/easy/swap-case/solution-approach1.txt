@@ -1,0 +1,24 @@
+# ──────────────────────────────────────────────────
+# Link        https://www.hackerrank.com/challenges/swap-case/problem?isFullScreen=true
+# Problem     sWAP cASE
+# Difficulty  Easy
+# Subdomain   Strings
+# Platform    HackerRank
+# Language    pypy3
+# Status      Accepted
+# Submitted   2026-11-16, 05:17 p.m.
+# ──────────────────────────────────────────────────
+
+def swap_case(s):
+    a = []
+
+    for n in s:
+        if n.isupper():
+            a.append(n.lower())
+        elif n.islower():
+            a.append(n.upper())
+        else:
+            a.append(n)
+
+    return "".join(a)
+
